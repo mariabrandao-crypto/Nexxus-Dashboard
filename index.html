@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NEXUS | Dashboard Interativo</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>NEXUS Dashboard</h1>
+        <p>Seu espaço de produtividade e clima</p>
+    </header>
+
+    <nav aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#tarefas">Tarefas</a>
+        <a href="#clima">Clima</a>
+        <a href="#estatisticas">Estatísticas</a>
+    </nav>
+
+    <main id="inicio">
+
+        <section id="boas-vindas">
+            <h2>Bem-vindo ao NEXUS!</h2>
+            <p>Organize seu dia de forma inteligente.</p>
+        </section>
+
+        <section id="estatisticas">
+            <h2>Visão Geral</h2>
+
+            <div id="total-tarefas">0 tarefas</div>
+            <div id="tarefas-concluidas">0 concluídas</div>
+            <div id="tarefas-pendentes">0 pendentes</div>
+        </section>
+
+        <section id="tarefas">
+            <h2>Gerenciador de Tarefas</h2>
+
+            <form id="form-tarefa">
+                <input type="text"
+                       id="input-tarefa"
+                       placeholder="Digite uma tarefa"
+                       aria-label="Nova tarefa"
+                       required>
+
+                <button type="submit">
+                    Adicionar
+                </button>
+            </form>
+
+            <ul id="lista-tarefas"></ul>
+        </section>
+
+        <section id="clima">
+            <h2>Previsão do Tempo</h2>
+            <div id="clima-resultado">
+                Aguardando dados meteorológicos...
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>NEXUS Dashboard | SENAI 2026</p>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+    <script src="js/tasks.js" defer></script>
+    <script src="js/weather.js" defer></script>
+
+</body>
+</html>
